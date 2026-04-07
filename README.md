@@ -4,6 +4,8 @@
 #### Negative Binomial Regression Testing for Monthly Trend in Moving Violations between Jan 2007 and Jun 2016
 Results confirmed there was a significant negative trend in counts of moving violations in June, November, and December compared at a 90% confidence level.
 
+[negative_binomial_regression.R](https://github.com/sienaroma/sf_moving_violations/blob/main/negative_binomial_regression.R)
+
 ### 2.	Can the expected number of moving violations in San Francisco be forecasted with a prediction interval for a month outside of the data’s time period, July 2016?
 #### ARIMA Model for Forecasting Moving Violation Count
 Using monthly stop data between July 2011 to June 2016, an ARIMA model predicted that July 2016 would have between 3,888 and 5,416 moving violations with 90% confidence. The ARIMA model used non-season AR(2) and MA(1) terms, a seasonal AR(2) term, and a seasonal period of 12 months.
