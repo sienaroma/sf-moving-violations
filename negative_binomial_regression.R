@@ -22,6 +22,10 @@ hc_vcov <- vcovHC(monthly_trend,type="HC3")
 coeftest(monthly_trend,vcov = hc_vcov)
 #output confirms June, November, and December are significant
 
+#IRR results
+irr <- exp(coef(monthly_trend))
+irr
+
 #test against null model to confirm significances aren't due to overfitting
 null_model <- glm.nb(Stop_Count ~ 1,data=data)
 anova(null_model, monthly_trend)
